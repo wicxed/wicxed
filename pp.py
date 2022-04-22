@@ -913,6 +913,16 @@ def postMemeCommand():
     mouse.press(MouseButton.left)
     mouse.release(MouseButton.left)
 
+def lotteryCommand():
+    enterCommand("pls pm")
+    sleep(3)
+    postMemeOptionPos = (PositionValues[1][0], PositionValues[1][1])
+    mouse.position = lottery
+    sleep(0.1)
+    
+    mouse.press(MouseButton.left)
+    mouse.release(MouseButton.left)
+
 def runBegCommand():
     while True:
         sleep(1)
